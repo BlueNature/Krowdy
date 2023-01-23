@@ -17,16 +17,16 @@
   <!-- Contenedor(area verde) -->
 
   <body>
-    <header class="title">Blackjack - Krowdy</header>
+    <header class="title">Blackjack - Krowdy <span id="currentPlayer"></span> </header>
 
     <!-- Contenedor de botones -->
     <div class="row mt-2">
       <div class="col text-center">
-        <button id="btnNuevoJuego" class="btn btn-danger">Nuevo juego</button>
-        <button disabled="disabled" id="btnPedirCarta" class="btn btn-primary">
+        <button id="btnNewGame" class="btn btn-danger">Nuevo juego</button>
+        <button disabled="disabled" id="btnDrawCard" class="btn btn-primary">
           Pedir carta
         </button>
-        <button disabled="disabled" id="btnDeneter" class="btn btn-primary">
+        <button disabled="disabled" id="btnStop" class="btn btn-primary">
           Detener
         </button>
       </div>
@@ -38,6 +38,16 @@
         <h1>Jugador 1 - <small>0</small></h1>
         <div id="player-cards" class="cards">
           <!-- Las cartas del jugador 1 aqui van! -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Cartas de Jugador 2 -->
+    <div class="row container">
+      <div class="col">
+        <h1>Jugador 2 - <small>0</small></h1>
+        <div id="player-cards" class="cards">
+          <!-- Las cartas del jugador 2 aqui van! -->
         </div>
       </div>
     </div>
